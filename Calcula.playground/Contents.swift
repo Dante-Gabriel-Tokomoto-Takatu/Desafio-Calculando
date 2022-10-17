@@ -1,20 +1,23 @@
-import UIKit
+func somaDoisNumeros(valor1: Int, valor2: Int) -> Int {
+    return valor1 + valor2
+     }
+   var valorTotal: Int = somaDoisNumeros(valor1: 2, valor2: 2)
+   print(valorTotal)
+   
+func subtracaoDoisNumeros(valor1: Int, valor2: Int) -> Int {
+    return valor1 - valor2
+     }
+   var valorTotal2: Int = subtracaoDoisNumeros(valor1: 2, valor2: 2)
+   print(valorTotal2)
 
-enum TypeOperacao {
-    case adicao
-    case subtracao
-    case multiplicacao
-    case divisao
-}
+func multiplicacaoDoisNumeros(valor1: Int, valor2: Int) -> Int {
+    return valor1 * valor2
+     }
+   var valorTotal3: Int = multiplicacaoDoisNumeros(valor1: 2, valor2: 2)
+   print(valorTotal3)
 
-
-func calcula(_ valor1: Int, _ valor2: Int, _ operacao: TypeOperacao) -> Int {
-    
-    // este return é só pra nao ficar dando erro.
-    return 0
-}
-
-print("Resultado: \(calcula(2,2,.adicao))")
-print("Resultado: \(calcula(2,2,.subtracao))")
-print("Resultado: \(calcula(2,2,.multiplicacao))")
-print("Resultado: \(calcula(2,2,.divisao))")
+func divisaoDoisNumeros(valor1: Int, valor2: Int) -> Int {
+    return valor1 / valor2
+     }
+   var valorTotal4: Int = divisaoDoisNumeros(valor1: 2, valor2: 2)
+   print(valorTotal4)
